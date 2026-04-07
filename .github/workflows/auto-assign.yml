@@ -1,0 +1,41 @@
+name: "Auto Assign"
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  add-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Auto Assign
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+
+            const codeownersPath = path.join(process.env.GITHUB_WORKSPACE, 'CODEOWNERS');
+            const codeownersContent = fs.readFileSync(codeownersPath, 'utf8');
+            const codeownersLines = codeownersContent.split('\n');
+
+            const assignees = [];
+            codeownersLines.forEach(line => {
+                if (line.startsWith('*')) {
+                    const assignee = line.substring(1).trim();
+                    assignees.push(assignee);
+                }
+            });
+
+            const payload = {
+                owner: context.payload.repository.owner.login,
+                repo: context.payload.repository.name,
+                issue_number: context.payload.pull_request.number,
+                assignees: assignees
+            };
+
+            await github.issues.addAssignees(payload);
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

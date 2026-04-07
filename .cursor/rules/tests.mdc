@@ -1,0 +1,34 @@
+---
+globs:
+  - tests/**/*.py
+---
+# Test Rules
+
+## Naming Conventions
+- Name files `test_<module>.py`.
+- Group related behavior in classes named `Test<Behavior>`.
+- Name tests with intent-focused names such as `test_returns_empty_result_for_missing_key`.
+
+## Fixtures
+- Share cross-file fixtures in `tests/conftest.py`.
+- Default fixtures to function scope unless broader scope is proven necessary.
+- Use noun-based fixture names that describe provided data/resources.
+- Keep fixtures focused and composable; avoid monolithic setup fixtures.
+
+## Assertions
+- Use direct `assert` statements with clear expected values.
+- Use `pytest.raises(...)` as a context manager for exception assertions.
+- Use `pytest.approx(...)` for floating-point comparisons.
+
+## Parametrize
+- Prefer `pytest.mark.parametrize` for scenario matrices.
+- Always provide explicit `ids=` values so failures are easy to diagnose.
+
+## Mocking
+- Use `monkeypatch` for simple attribute/env replacements.
+- Use `unittest.mock` for complex behavior, call assertions, or spy-style checks.
+- Mock at package boundaries (I/O, network, subprocesses), not internal implementation details.
+
+## Coverage
+- Keep line coverage at or above 80% for `src/my_package`.
+- Prioritize tests for error paths, branch-heavy logic, and public APIs.

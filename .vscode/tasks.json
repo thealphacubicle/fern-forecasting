@@ -1,0 +1,114 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "uv: sync",
+      "type": "shell",
+      "command": "uv sync --extra dev",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "uv: install pre-commit hooks",
+      "type": "shell",
+      "command": "uv run pre-commit install",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "ruff: lint",
+      "type": "shell",
+      "command": "uv run ruff check .",
+      "problemMatcher": [
+        "$flake8"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "ruff: lint --fix",
+      "type": "shell",
+      "command": "uv run ruff check --fix .",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "ruff: format",
+      "type": "shell",
+      "command": "uv run ruff format .",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "pytest: run all",
+      "type": "shell",
+      "command": "uv run pytest",
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "pytest: run current file",
+      "type": "shell",
+      "command": "uv run pytest ${relativeFile} -v",
+      "problemMatcher": [],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "pytest: run with coverage (html)",
+      "type": "shell",
+      "command": "bash -lc 'uv run pytest --cov=src/my_package --cov-report=term-missing --cov-report=html && \"$BROWSER\" htmlcov/index.html'",
+      "problemMatcher": [],
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "pre-commit: run all hooks",
+      "type": "shell",
+      "command": "uv run pre-commit run --all-files",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "uv: build",
+      "type": "shell",
+      "command": "uv build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
+

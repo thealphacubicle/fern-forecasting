@@ -1,0 +1,37 @@
+---
+alwaysApply: true
+---
+# Project Rules
+
+## Stack
+- Use Python 3.11+.
+- Use `uv` for environment and dependency management.
+- Never suggest `pip install`; use `uv add`, `uv add --dev`, `uv sync`, and `uv run`.
+- Use `ruff` for linting and formatting (not black, isort, or flake8).
+- Use `pytest` for tests.
+- Use `hatchling` as the build backend.
+
+## Code Style
+- Maximum line length: 88.
+- Use double quotes for strings unless escaping would be reduced by single quotes.
+- Prefer `pathlib` over `os.path`.
+- Prefer `logging` over `print` for application output.
+- Write Google-style docstrings for public modules, classes, and functions.
+- Type hints are required for all function signatures and public attributes.
+
+## Project Layout
+- Keep source code under `src/my_package/`.
+- Keep tests under `tests/`.
+- Keep project metadata and tooling configuration in `pyproject.toml`.
+
+## Testing Conventions
+- Name test files as `test_<module>.py`.
+- Use `pytest.mark.parametrize` for table-driven scenarios.
+- Maintain at least 80% test coverage.
+- Group related tests in `Test<ClassOrFeature>` classes where practical.
+
+## Do Not Do
+- Do not add or manage dependencies in `requirements.txt`.
+- Do not add `setup.py` or `setup.cfg`.
+- Do not use `typing.Optional`, `typing.Union`, `typing.List`, or `typing.Dict`.
+- Use modern typing syntax (`X | None`, `A | B`, `list[T]`, `dict[K, V]`).
