@@ -1,0 +1,19 @@
+[project]
+name = "fern_forecasting"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.10.8",
+    "nltk>=3.9.4",
+    "numpy>=2.4.4",
+    "onnxruntime>=1.24.4",
+    "pandas>=3.0.2",
+    "pathlib>=1.0.1",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+]

@@ -1,0 +1,311 @@
+review_id,platform,review_date,star_rating,review_text,occasion_mentioned
+REV-001,Google,2023-01-01,5,Love this little shop on Mass Ave. Always stop in when I'm in the area. Great prices and the flowers are always super fresh.,walk-in
+REV-002,Yelp,2023-01-01,5,Just moved to the area and this place is a hidden treasure. Beautiful selection and the most helpful staff. My new go-to florist.,walk-in
+REV-003,Google,2023-01-03,4,Quick birthday bouquet pickup. In and out in 10 minutes and it was beautiful. Sometimes simple and fast is all you need.,
+REV-004,Yelp,2023-01-05,1,Ordered a specific color scheme for a birthday and they substituted without asking. The flowers were fine but not what I ordered.,
+REV-005,Yelp,2023-01-08,2,Was browsing and the staff member hovering over me made me uncomfortable. Felt like I was being rushed to buy something.,walk-in
+REV-006,Google,2023-01-24,1,Graduation bouquet was already wilting when I picked it up. Had to ask them to redo it which made me late to the ceremony. Stressful.,graduation
+REV-007,Google,2023-01-24,2,"Hospital delivery took two days instead of same-day as promised. When they finally arrived, the arrangement was smaller than what I ordered. Not cool.",hospital
+REV-008,Google,2023-01-24,1,Online order looked nothing like the picture. Arrangement was much smaller than expected. Disappointing.,anniversary
+REV-009,Google,2023-01-27,4,Quick birthday bouquet pickup. In and out in 10 minutes and it was beautiful. Sometimes simple and fast is all you need.,birthday
+REV-010,Google,2023-01-28,4,Ordered a special anniversary bouquet. Roses and orchids together were elegant. The presentation with the ribbon and wrapping was really classy.,anniversary
+REV-011,Google,2023-02-04,1,"Tried to order online for Valentine's and the website kept crashing. By the time I got through, they were out of most things. Frustrating experience.",Valentine's Day
+REV-012,Yelp,2023-02-05,5,Just moved to the area and this place is a hidden treasure. Beautiful selection and the most helpful staff. My new go-to florist.,walk-in
+REV-013,Google,2023-02-06,4,"Needed sympathy flowers on short notice and they put together a beautiful, dignified arrangement in under an hour. Very compassionate staff.",
+REV-014,Google,2023-02-06,2,Mother's Day arrangement was much smaller than what was shown online. My mom was polite about it but I could tell she was underwhelmed. Not ordering again.,Mother's Day
+REV-015,Google,2023-02-11,2,Paid premium prices for Valentine's roses and half of them were already opening. They didn't even last three days. Total waste of money.,Valentine's Day
+REV-016,Google,2023-02-11,4,"The Valentine's premium rose bouquet was worth every penny. Huge blooms, rich color, and they threw in a small box of chocolates. Such a nice personal touch.",Valentine's Day
+REV-017,Google,2023-02-12,5,Quick delivery to Beth Israel. The arrangement was fresh and cheerful. Exactly what my mom needed to feel better.,
+REV-018,Google,2023-02-12,3,Prices have gone up quite a bit since last year. The flowers are still nice but I'm not sure the value is there anymore for casual purchases.,walk-in
+REV-019,Google,2023-02-12,5,Stopped by for Valentine's and the staff recommended adding some greenery to the roses. It made such a difference. Looked way more expensive than it was.,Valentine's Day
+REV-020,Google,2023-02-14,3,The birthday flowers were pretty but smaller than I expected for the price. My friend liked them though so it worked out.,birthday
+REV-021,Google,2023-02-14,3,The birthday flowers were pretty but smaller than I expected for the price. My friend liked them though so it worked out.,birthday
+REV-022,Google,2023-02-14,2,Paid premium prices for Valentine's roses and half of them were already opening. They didn't even last three days. Total waste of money.,
+REV-023,Yelp,2023-02-15,3,The birthday flowers were pretty but smaller than I expected for the price. My friend liked them though so it worked out.,birthday
+REV-024,Google,2023-02-16,5,Valentine's Day and the shop was packed but the staff stayed calm and helpful. Got a beautiful tulip arrangement since roses were selling fast. Really happy with it.,
+REV-025,Yelp,2023-02-20,2,The shop was closed during posted hours which was frustrating. When I came back the next day the selection was good but that was annoying.,walk-in
+REV-026,Google,2023-02-20,3,Got my mom a bouquet for Mother's Day. It was nice enough but she said the one I got her last year from another place was better. Middle of the road.,
+REV-027,Yelp,2023-02-22,5,Birthday flowers for my sister. Asked for something bright and cheerful and they nailed it. She said it was the highlight of her day.,birthday
+REV-028,Yelp,2023-02-23,5,Love that they carry succulents and air plants in addition to fresh flowers. Got a cute little arrangement for my bathroom shelf.,walk-in
+REV-029,Yelp,2023-02-24,4,"Small courthouse wedding and they made the sweetest little bridal bouquet and boutonniere. Didn't need a big florist for our intimate ceremony, they were perfect.",
+REV-030,Yelp,2023-02-26,2,Valentine's Day order was a disaster. Ordered roses online and they arrived wilted and brown around the edges. Very disappointing for such an important day.,Valentine's Day
+REV-031,Yelp,2023-02-27,5,"Small courthouse wedding and they made the sweetest little bridal bouquet and boutonniere. Didn't need a big florist for our intimate ceremony, they were perfect.",wedding
+REV-032,Google,2023-02-28,3,Valentine's arrangement was fine. Not bad but not the wow factor I was hoping for. Flowers lasted a good while though so I can't complain too much.,Valentine's Day
+REV-033,Google,2023-03-04,5,Corporate order for our office and they put together gorgeous orchid centerpieces. Reliable and professional. Will use for future events.,corporate
+REV-034,Google,2023-03-05,5,Needed a get-well bouquet fast and they came through. Bright colorful mix with sunflowers and daisies. Friend loved them.,hospital
+REV-035,Google,2023-03-08,4,Sent a sympathy bouquet and received a thank you note saying the flowers were lovely. The white lilies and greenery were a perfect choice.,sympathy
+REV-036,Google,2023-03-09,2,"Tried to order online for Valentine's and the website kept crashing. By the time I got through, they were out of most things. Frustrating experience.",Valentine's Day
+REV-037,Yelp,2023-03-13,5,Been coming here for years and the quality never drops. Even a simple $15 bouquet from here looks like it cost three times that. Love this place.,walk-in
+REV-038,Google,2023-03-14,5,Wandered in after dinner at a nearby restaurant and left with the most beautiful hydrangea plant. It's now the centerpiece of my living room.,
+REV-039,Yelp,2023-03-18,5,Did our wedding flowers through Fern and they exceeded expectations. The bridal bouquet was exactly what I envisioned. Peonies and garden roses were perfect.,wedding
+REV-040,Yelp,2023-03-19,3,Decent selection and the staff is friendly enough. Nothing wrong with the experience but nothing memorable either. Just average.,walk-in
+REV-041,Google,2023-03-21,4,"Came in looking for something specific and they didn't have it, but the owner suggested an alternative that turned out even better. Great customer service.",walk-in
+REV-042,Yelp,2023-03-22,3,Sympathy flowers were appropriate but nothing special. They did the job. Delivery was on time which is what mattered most.,
+REV-043,Yelp,2023-03-29,4,Quick stop before the graduation ceremony and they had exactly what I needed. Cheerful mixed bouquet that photographed beautifully.,graduation
+REV-044,Google,2023-04-06,3,Birthday arrangement was generic looking. I asked for something unique and creative but got a standard mixed bouquet. It was fine but not special.,birthday
+REV-045,Google,2023-04-12,2,Was browsing and the staff member hovering over me made me uncomfortable. Felt like I was being rushed to buy something.,walk-in
+REV-046,Yelp,2023-04-16,4,Just moved to the area and this place is a hidden treasure. Beautiful selection and the most helpful staff. My new go-to florist.,walk-in
+REV-047,Yelp,2023-04-18,5,Ordered a sympathy arrangement to be delivered to a funeral home and they coordinated everything. One less thing to worry about during a hard time.,sympathy
+REV-048,Google,2023-04-26,5,Ordered a sympathy arrangement for a coworker's family. The lilies were elegant and appropriate. They handled the delivery with care.,sympathy
+REV-049,Google,2023-05-03,3,Hospital delivery was fine but the arrangement was pretty basic. For a get-well gift I would have liked something a bit more cheerful and bright.,hospital
+REV-050,Yelp,2023-05-03,5,Had them do a custom Valentine's arrangement mixing roses with some eucalyptus. It was different from anything I've seen and my girlfriend loved the creativity.,Valentine's Day
+REV-051,Google,2023-05-05,5,Needed 5 small bouquets for our graduating team members and they put them together same-day. Bright and professional. Everyone loved them.,graduation
+REV-052,Yelp,2023-05-05,4,Ordered a get-well arrangement for my coworker at MGH. They delivered within 3 hours and my coworker said the nurses all commented on how pretty it was.,hospital
+REV-053,Google,2023-05-07,4,My wife picks up our anniversary flowers herself now because she trusts them completely. This year's were her favorite yet. Deep red roses with touches of gold.,anniversary
+REV-054,Google,2023-05-07,4,Quick delivery to Beth Israel. The arrangement was fresh and cheerful. Exactly what my mom needed to feel better.,hospital
+REV-055,Google,2023-05-08,3,"Decent corporate arrangements but we've gotten better elsewhere for the same price. Not bad, just not standing out.",corporate
+REV-056,Google,2023-05-08,2,The card they included with the sympathy flowers had a typo in the message I dictated. Small thing but it matters when you're grieving.,sympathy
+REV-057,Yelp,2023-05-09,2,Called to ask about Mother's Day availability and was put on hold for 15 minutes before getting disconnected. Ended up going somewhere else.,Mother's Day
+REV-058,Yelp,2023-05-09,5,Beautiful Mother's Day arrangement with lilies and hydrangeas. My mom said it made her whole week. The shop even included a nice handwritten card.,Mother's Day
+REV-059,Yelp,2023-05-09,5,Stopped in to pick up a plant for my desk at work. The selection of small potted plants is great. Ended up getting two because they were so cute.,walk-in
+REV-060,Yelp,2023-05-09,4,"Bought sunflowers for my daughter's Northeastern graduation. Beautiful and bright, great price, ready in 20 minutes. Highly recommend.",graduation
+REV-061,Yelp,2023-05-11,4,Bought a couple of house plants on a whim and they're still thriving months later. The owner gave me care tips which was really nice.,walk-in
+REV-062,Yelp,2023-05-11,5,"Picked up a Mother's Day bouquet on my way to brunch and it was ready in five minutes. Peonies and roses, wrapped perfectly. Mom was so happy.",Mother's Day
+REV-063,Google,2023-05-12,4,Birthday flowers for my sister. Asked for something bright and cheerful and they nailed it. She said it was the highlight of her day.,birthday
+REV-064,Yelp,2023-05-12,3,Got my mom a bouquet for Mother's Day. It was nice enough but she said the one I got her last year from another place was better. Middle of the road.,Mother's Day
+REV-065,Google,2023-05-12,5,Ordered online for Mother's Day delivery across town. Flowers arrived in perfect condition. Mom sent me a photo and they looked amazing.,Mother's Day
+REV-066,Google,2023-05-12,4,Had to order sympathy flowers for a difficult time. The arrangement was tasteful and the staff was very understanding and gentle. Appreciated their kindness.,sympathy
+REV-067,Google,2023-05-12,5,Came in last minute for Valentine's Day and they still had an amazing selection. The woman at the counter helped me put together something really special. Will be back!,Valentine's Day
+REV-068,Yelp,2023-05-14,5,Stumbled on this place walking by and the storefront display caught my eye. Went in and picked up the most gorgeous fern. Prices were fair.,
+REV-069,Google,2023-05-14,5,"Valentine's Day rush and they handled it like pros. Pre-ordered online, picked up in store, everything was perfect and fresh.",Valentine's Day
+REV-070,Google,2023-05-14,5,Beautiful Mother's Day arrangement with lilies and hydrangeas. My mom said it made her whole week. The shop even included a nice handwritten card.,Mother's Day
+REV-071,Google,2023-05-15,1,Delivery for Mother's Day was a day late. The flowers were beautiful when they arrived but the whole point was to have them on the actual day.,Mother's Day
+REV-072,Yelp,2023-05-15,4,Got a birthday arrangement for my roommate and they included a little happy birthday pick in it without me even asking. Cute detail.,birthday
+REV-073,Yelp,2023-05-16,5,Mother's Day bouquet arrived with a small potted succulent as a bonus. Such a thoughtful extra touch. Mom keeps the succulent on her windowsill now.,Mother's Day
+REV-074,Google,2023-05-16,5,"Valentine's Day rush and they handled it like pros. Pre-ordered online, picked up in store, everything was perfect and fresh.",Valentine's Day
+REV-075,Google,2023-05-17,4,Sent peonies to my mom for Mother's Day and she absolutely loved them. The delivery was right on time and the flowers were incredibly fresh.,Mother's Day
+REV-076,Yelp,2023-05-17,5,Popped in to grab a simple bouquet for my apartment and ended up chatting with the owner for 20 minutes about plants. Such a gem of a shop.,walk-in
+REV-077,Google,2023-05-17,5,Sent Mother's Day flowers to both my mom and mother-in-law. Both arrangements were beautiful but different. They clearly put thought into each one.,
+REV-078,Yelp,2023-05-17,5,Popped in to grab a simple bouquet for my apartment and ended up chatting with the owner for 20 minutes about plants. Such a gem of a shop.,walk-in
+REV-079,Yelp,2023-05-18,5,Popped in to grab a simple bouquet for my apartment and ended up chatting with the owner for 20 minutes about plants. Such a gem of a shop.,walk-in
+REV-080,Google,2023-05-18,5,Ordered a large Mother's Day arrangement for my grandmother. The mix of spring flowers was cheerful and bright. She displayed it in her living room all week.,Mother's Day
+REV-081,Yelp,2023-05-19,4,Ordered a birthday bouquet online and it was even better in person. The tulips were gorgeous. Delivery was prompt too.,birthday
+REV-082,Google,2023-05-19,4,Walked in on a random Tuesday and they had a great selection of ferns and tropical plants. Staff were knowledgeable and fun to talk to.,walk-in
+REV-083,Google,2023-05-19,4,Stopped in to pick up a plant for my desk at work. The selection of small potted plants is great. Ended up getting two because they were so cute.,walk-in
+REV-084,Yelp,2023-05-19,5,Needed 5 small bouquets for our graduating team members and they put them together same-day. Bright and professional. Everyone loved them.,graduation
+REV-085,Google,2023-05-22,5,Came in last minute for Valentine's Day and they still had an amazing selection. The woman at the counter helped me put together something really special. Will be back!,Valentine's Day
+REV-086,Yelp,2023-05-24,3,"Nice shop, nice people, but the hours are inconsistent. I've shown up twice during posted hours to find it closed. Flowers are good when they're open.",walk-in
+REV-087,Yelp,2023-05-25,5,"They helped me choose appropriate sympathy flowers when I had no idea where to start. The arrangement was simple, elegant, and comforting. Really grateful.",sympathy
+REV-088,Google,2023-05-26,5,Got a beautiful rose arrangement delivered to my partner's office. They said everyone was jealous. Flowers looked exactly like the picture on the website.,Valentine's Day
+REV-089,Yelp,2023-05-26,3,Mother's Day was very hectic in the store. Staff were overwhelmed and I felt rushed. The hydrangeas were nice but the experience wasn't great.,Mother's Day
+REV-090,Yelp,2023-05-27,4,This is my third year getting Mother's Day flowers here. They always remember that my mom loves pink peonies. That kind of personal service means a lot.,Mother's Day
+REV-091,Google,2023-05-27,2,Called to ask about Mother's Day availability and was put on hold for 15 minutes before getting disconnected. Ended up going somewhere else.,Mother's Day
+REV-092,Yelp,2023-05-31,2,The shop was closed during posted hours which was frustrating. When I came back the next day the selection was good but that was annoying.,
+REV-093,Yelp,2023-06-07,4,"Valentine's Day rush and they handled it like pros. Pre-ordered online, picked up in store, everything was perfect and fresh.",Valentine's Day
+REV-094,Google,2023-06-09,3,Stopped in hoping for a succulent and they had none in stock. Pretty limited selection of houseplants compared to what they used to carry.,walk-in
+REV-095,Google,2023-06-10,5,Ordered a large Mother's Day arrangement for my grandmother. The mix of spring flowers was cheerful and bright. She displayed it in her living room all week.,Mother's Day
+REV-096,Yelp,2023-06-19,4,Called the day before Mother's Day in a panic and they squeezed in a delivery for me. The lilies were stunning. Can't thank them enough.,Mother's Day
+REV-097,Google,2023-06-20,5,Love this little shop on Mass Ave. Always stop in when I'm in the area. Great prices and the flowers are always super fresh.,walk-in
+REV-098,Yelp,2023-06-22,5,The Mother's Day special was a great deal. Got a big arrangement of mixed flowers for a very reasonable price. Mom was thrilled.,Mother's Day
+REV-099,Yelp,2023-06-22,5,"Picked up a celebratory bouquet for my son's graduation and it was perfect. Bright, cheerful, and very fresh. The staff even wrapped it with a ribbon.",graduation
+REV-100,Google,2023-06-23,5,Got a beautiful rose arrangement delivered to my partner's office. They said everyone was jealous. Flowers looked exactly like the picture on the website.,
+REV-101,Yelp,2023-06-25,3,The flowers are always fresh but the store can be hard to navigate when it's busy. It's a small space and sometimes there are too many people.,walk-in
+REV-102,Google,2023-07-08,3,Wedding trial arrangement was beautiful but the actual day arrangements were a step down. Not terrible but noticeable. Wish they had been more consistent.,wedding
+REV-103,Google,2023-07-16,2,Overcharged compared to what was quoted on the phone. Had to argue to get the correct price. Flowers were nice but the experience was soured.,anniversary
+REV-104,Google,2023-07-22,5,The wedding centerpieces were absolutely stunning. Hydrangeas and gardenias everywhere. Multiple guests asked where we got our flowers.,wedding
+REV-105,Yelp,2023-07-23,5,For our 10th anniversary they suggested a premium arrangement with peonies and garden roses. It was the most beautiful thing I've ever brought home.,anniversary
+REV-106,Yelp,2023-07-25,2,The hospital wouldn't accept the delivery because the arrangement included lilies which aren't allowed in some wards. Should have been told this when ordering.,
+REV-107,Google,2023-07-27,5,Quick birthday bouquet pickup. In and out in 10 minutes and it was beautiful. Sometimes simple and fast is all you need.,birthday
+REV-108,Yelp,2023-08-01,4,The wedding centerpieces were absolutely stunning. Hydrangeas and gardenias everywhere. Multiple guests asked where we got our flowers.,
+REV-109,Google,2023-08-02,4,Ordered a large arrangement for a graduation party centerpiece. Sunflowers and roses looked incredible. Got tons of compliments.,graduation
+REV-110,Google,2023-08-10,5,Bought flowers here for my first dinner party in my new apartment. The woman helped me pick something that matched my decor. So thoughtful.,walk-in
+REV-111,Yelp,2023-08-10,3,Valentine's arrangement was fine. Not bad but not the wow factor I was hoping for. Flowers lasted a good while though so I can't complain too much.,Valentine's Day
+REV-112,Google,2023-08-13,3,Got my mom a bouquet for Mother's Day. It was nice enough but she said the one I got her last year from another place was better. Middle of the road.,Mother's Day
+REV-113,Yelp,2023-08-24,5,Fern handled our rehearsal dinner flowers and they were so beautiful we wished we'd used them for the whole wedding. Elegant orchid arrangements.,wedding
+REV-114,Yelp,2023-08-25,5,Fern handled our rehearsal dinner flowers and they were so beautiful we wished we'd used them for the whole wedding. Elegant orchid arrangements.,
+REV-115,Yelp,2023-08-28,5,Got my roommate a graduation bouquet as a surprise. The sunflower and daisy combination was perfect. She carried it through the whole ceremony.,graduation
+REV-116,Google,2023-09-09,5,Mother's Day bouquet arrived with a small potted succulent as a bonus. Such a thoughtful extra touch. Mom keeps the succulent on her windowsill now.,Mother's Day
+REV-117,Google,2023-09-09,3,Sympathy flowers were appropriate but nothing special. They did the job. Delivery was on time which is what mattered most.,sympathy
+REV-118,Google,2023-09-10,5,Popped in to grab a simple bouquet for my apartment and ended up chatting with the owner for 20 minutes about plants. Such a gem of a shop.,
+REV-119,Google,2023-09-22,5,Valentine's Day and the shop was packed but the staff stayed calm and helpful. Got a beautiful tulip arrangement since roses were selling fast. Really happy with it.,Valentine's Day
+REV-120,Yelp,2023-09-28,5,Ordered a birthday bouquet online and it was even better in person. The tulips were gorgeous. Delivery was prompt too.,
+REV-121,Google,2023-10-13,1,Ordered lilies online for delivery to my mom in the hospital. The arrangement arrived a day late and some flowers were already wilting. Really disappointed.,hospital
+REV-122,Google,2023-10-16,5,Ordered arrangements for a client dinner and they were elegant without being over the top. Several clients commented on them. Good representation of our brand.,corporate
+REV-123,Google,2023-10-23,5,Bought flowers here for my first dinner party in my new apartment. The woman helped me pick something that matched my decor. So thoughtful.,walk-in
+REV-124,Google,2023-10-27,4,My go-to spot for fresh flowers every other week. The seasonal selections keep things interesting and the staff always has good suggestions.,walk-in
+REV-125,Yelp,2023-10-28,4,"Picked up a celebratory bouquet for my son's graduation and it was perfect. Bright, cheerful, and very fresh. The staff even wrapped it with a ribbon.",graduation
+REV-126,Google,2023-11-06,5,Ordered arrangements for a client dinner and they were elegant without being over the top. Several clients commented on them. Good representation of our brand.,corporate
+REV-127,Yelp,2023-11-11,5,Called the day before Mother's Day in a panic and they squeezed in a delivery for me. The lilies were stunning. Can't thank them enough.,Mother's Day
+REV-128,Google,2023-11-12,5,Quick delivery to Beth Israel. The arrangement was fresh and cheerful. Exactly what my mom needed to feel better.,
+REV-129,Yelp,2023-11-13,4,Ordered a birthday bouquet online and it was even better in person. The tulips were gorgeous. Delivery was prompt too.,birthday
+REV-130,Google,2023-11-15,4,Fern handled our rehearsal dinner flowers and they were so beautiful we wished we'd used them for the whole wedding. Elegant orchid arrangements.,wedding
+REV-131,Yelp,2023-11-16,4,Ordered a large arrangement for a graduation party centerpiece. Sunflowers and roses looked incredible. Got tons of compliments.,graduation
+REV-132,Google,2023-11-19,5,"The Valentine's premium rose bouquet was worth every penny. Huge blooms, rich color, and they threw in a small box of chocolates. Such a nice personal touch.",Valentine's Day
+REV-133,Google,2023-11-21,5,Sent a small cheerful bouquet to my friend recovering from surgery. She said it was the best thing she received. Bright colors really helped her mood.,hospital
+REV-134,Google,2023-11-22,4,The wedding centerpieces were absolutely stunning. Hydrangeas and gardenias everywhere. Multiple guests asked where we got our flowers.,wedding
+REV-135,Yelp,2023-11-24,3,Stopped in hoping for a succulent and they had none in stock. Pretty limited selection of houseplants compared to what they used to carry.,walk-in
+REV-136,Google,2023-12-07,2,Bought what was supposed to be a premium bouquet and found a few dead stems hidden inside when I got home. Felt dishonest.,walk-in
+REV-137,Google,2023-12-08,5,Valentine's delivery was flawless. Ordered by noon and it arrived by 3pm. The red and white roses together were a really nice touch.,Valentine's Day
+REV-138,Google,2023-12-09,3,Great tulips for Valentine's but the line was really long. They were fresh and lasted over a week though. Worth the wait I guess.,Valentine's Day
+REV-139,Google,2023-12-09,1,Was browsing and the staff member hovering over me made me uncomfortable. Felt like I was being rushed to buy something.,walk-in
+REV-140,Google,2023-12-11,5,The Valentine's bouquet I ordered was stunning. Red and pink roses with baby's breath. My wife cried happy tears.,Valentine's Day
+REV-141,Yelp,2023-12-15,5,Did our wedding flowers through Fern and they exceeded expectations. The bridal bouquet was exactly what I envisioned. Peonies and garden roses were perfect.,wedding
+REV-142,Google,2023-12-17,5,Pre-ordered Valentine's roses two weeks early and they called to confirm the day before. Great communication and the flowers were exactly what I wanted.,Valentine's Day
+REV-143,Google,2023-12-19,4,Sent a birthday arrangement to a friend. They loved the surprise. Good variety of flowers and it lasted well over a week.,birthday
+REV-144,Google,2023-12-19,5,Ordered a sympathy arrangement to be delivered to a funeral home and they coordinated everything. One less thing to worry about during a hard time.,sympathy
+REV-145,Google,2023-12-21,3,"Decent corporate arrangements but we've gotten better elsewhere for the same price. Not bad, just not standing out.",corporate
+REV-146,Yelp,2023-12-22,2,"Tried to order online for Valentine's and the website kept crashing. By the time I got through, they were out of most things. Frustrating experience.",
+REV-147,Yelp,2023-12-25,2,Was browsing and the staff member hovering over me made me uncomfortable. Felt like I was being rushed to buy something.,walk-in
+REV-148,Yelp,2023-12-25,3,The roses were nice but nothing extraordinary for the price. For Valentine's Day I expected something more special. Decent but not amazing.,Valentine's Day
+REV-149,Google,2023-12-26,5,Needed a get-well bouquet fast and they came through. Bright colorful mix with sunflowers and daisies. Friend loved them.,hospital
+REV-150,Yelp,2023-12-31,3,"Decent corporate arrangements but we've gotten better elsewhere for the same price. Not bad, just not standing out.",corporate
+REV-151,Yelp,2024-01-03,5,Had to order sympathy flowers for a difficult time. The arrangement was tasteful and the staff was very understanding and gentle. Appreciated their kindness.,sympathy
+REV-152,Yelp,2024-01-04,2,The shop was closed during posted hours which was frustrating. When I came back the next day the selection was good but that was annoying.,walk-in
+REV-153,Yelp,2024-01-08,2,Birthday delivery arrived a day late. What's the point of birthday flowers the day after? Refund was fine but the damage was done.,
+REV-154,Yelp,2024-01-15,2,Consultation for wedding flowers was great but the final product didn't match the samples we discussed. Some substitutions were made without telling us.,wedding
+REV-155,Yelp,2024-01-26,3,Stopped in hoping for a succulent and they had none in stock. Pretty limited selection of houseplants compared to what they used to carry.,walk-in
+REV-156,Google,2024-01-26,5,Bought a couple of house plants on a whim and they're still thriving months later. The owner gave me care tips which was really nice.,walk-in
+REV-157,Google,2024-02-04,5,Had them do a custom Valentine's arrangement mixing roses with some eucalyptus. It was different from anything I've seen and my girlfriend loved the creativity.,Valentine's Day
+REV-158,Google,2024-02-06,3,Anniversary arrangement was pretty but the gardenias browned quickly. The roses held up fine though. Mixed results overall.,anniversary
+REV-159,Yelp,2024-02-11,5,The Valentine's bouquet I ordered was stunning. Red and pink roses with baby's breath. My wife cried happy tears.,
+REV-160,Yelp,2024-02-13,2,Flowers were fine but the delivery was 4 hours late. On Valentine's Day that's a big deal. My partner thought I forgot.,Valentine's Day
+REV-161,Yelp,2024-02-13,3,Prices have gone up quite a bit since last year. The flowers are still nice but I'm not sure the value is there anymore for casual purchases.,walk-in
+REV-162,Google,2024-02-13,4,Just moved to the area and this place is a hidden treasure. Beautiful selection and the most helpful staff. My new go-to florist.,walk-in
+REV-163,Google,2024-02-15,5,Had them do a custom Valentine's arrangement mixing roses with some eucalyptus. It was different from anything I've seen and my girlfriend loved the creativity.,Valentine's Day
+REV-164,Yelp,2024-02-15,4,Came in last minute for Valentine's Day and they still had an amazing selection. The woman at the counter helped me put together something really special. Will be back!,Valentine's Day
+REV-165,Google,2024-02-15,2,"Hospital delivery took two days instead of same-day as promised. When they finally arrived, the arrangement was smaller than what I ordered. Not cool.",hospital
+REV-166,Google,2024-02-15,4,Stopped by for Valentine's and the staff recommended adding some greenery to the roses. It made such a difference. Looked way more expensive than it was.,
+REV-167,Google,2024-02-16,5,Fern handled our rehearsal dinner flowers and they were so beautiful we wished we'd used them for the whole wedding. Elegant orchid arrangements.,wedding
+REV-168,Google,2024-02-16,4,"First time ordering from Fern for Valentine's and I'm a customer for life. Roses were deep red, fragrant, and lasted well into the next week.",
+REV-169,Yelp,2024-02-17,5,Valentine's delivery was flawless. Ordered by noon and it arrived by 3pm. The red and white roses together were a really nice touch.,Valentine's Day
+REV-170,Google,2024-02-18,5,Been coming here for years and the quality never drops. Even a simple $15 bouquet from here looks like it cost three times that. Love this place.,walk-in
+REV-171,Google,2024-02-19,2,The shop was closed during posted hours which was frustrating. When I came back the next day the selection was good but that was annoying.,walk-in
+REV-172,Google,2024-02-19,5,Ordered a birthday bouquet online and it was even better in person. The tulips were gorgeous. Delivery was prompt too.,birthday
+REV-173,Google,2024-02-19,3,Great tulips for Valentine's but the line was really long. They were fresh and lasted over a week though. Worth the wait I guess.,Valentine's Day
+REV-174,Google,2024-02-19,5,Fern handled our rehearsal dinner flowers and they were so beautiful we wished we'd used them for the whole wedding. Elegant orchid arrangements.,wedding
+REV-175,Google,2024-02-19,3,Valentine's arrangement was fine. Not bad but not the wow factor I was hoping for. Flowers lasted a good while though so I can't complain too much.,Valentine's Day
+REV-176,Yelp,2024-02-20,5,Got gardenias for our anniversary and my wife was blown away by the fragrance. They customized the arrangement exactly how I described. Incredible.,anniversary
+REV-177,Yelp,2024-02-21,3,The roses were nice but nothing extraordinary for the price. For Valentine's Day I expected something more special. Decent but not amazing.,Valentine's Day
+REV-178,Yelp,2024-02-22,4,The Valentine's bouquet I ordered was stunning. Red and pink roses with baby's breath. My wife cried happy tears.,Valentine's Day
+REV-179,Yelp,2024-02-22,3,The roses were nice but nothing extraordinary for the price. For Valentine's Day I expected something more special. Decent but not amazing.,
+REV-180,Yelp,2024-02-22,3,The flowers are always fresh but the store can be hard to navigate when it's busy. It's a small space and sometimes there are too many people.,
+REV-181,Yelp,2024-02-23,2,Was browsing and the staff member hovering over me made me uncomfortable. Felt like I was being rushed to buy something.,
+REV-182,Google,2024-02-25,3,Grabbed a bouquet and it was fine. Lasted about five days. For a neighborhood shop the prices are a little steep but not terrible.,walk-in
+REV-183,Google,2024-02-25,4,Best Valentine's flowers I've gotten in years. My wife loved the mixed bouquet with roses and tulips. Quick and easy online ordering too.,Valentine's Day
+REV-184,Yelp,2024-02-26,5,Hospital delivery was smooth and fast. The arrangement avoided lilies since my friend has allergies and I mentioned that when ordering. They listened.,
+REV-185,Yelp,2024-02-26,3,"Used them for wedding flowers and while the final product was OK, the communication leading up to the event was stressful. Took a long time to get responses.",wedding
+REV-186,Google,2024-02-27,3,Birthday arrangement was generic looking. I asked for something unique and creative but got a standard mixed bouquet. It was fine but not special.,birthday
+REV-187,Google,2024-02-27,3,Great tulips for Valentine's but the line was really long. They were fresh and lasted over a week though. Worth the wait I guess.,Valentine's Day
+REV-188,Yelp,2024-03-02,5,Got a beautiful rose arrangement delivered to my partner's office. They said everyone was jealous. Flowers looked exactly like the picture on the website.,Valentine's Day
+REV-189,Google,2024-03-07,4,"They helped me choose appropriate sympathy flowers when I had no idea where to start. The arrangement was simple, elegant, and comforting. Really grateful.",sympathy
+REV-190,Google,2024-03-10,3,Got my mom a bouquet for Mother's Day. It was nice enough but she said the one I got her last year from another place was better. Middle of the road.,Mother's Day
+REV-191,Yelp,2024-03-14,5,My wife picks up our anniversary flowers herself now because she trusts them completely. This year's were her favorite yet. Deep red roses with touches of gold.,anniversary
+REV-192,Google,2024-03-16,3,"Our recurring office order has been inconsistent lately. Some weeks the arrangements are gorgeous, other weeks they look like an afterthought. Need more consistency.",corporate
+REV-193,Yelp,2024-03-18,2,Was browsing and the staff member hovering over me made me uncomfortable. Felt like I was being rushed to buy something.,walk-in
+REV-194,Yelp,2024-03-19,3,Anniversary arrangement was pretty but the gardenias browned quickly. The roses held up fine though. Mixed results overall.,anniversary
+REV-195,Google,2024-03-21,3,"Nice shop, nice people, but the hours are inconsistent. I've shown up twice during posted hours to find it closed. Flowers are good when they're open.",walk-in
+REV-196,Google,2024-03-27,5,Quick birthday bouquet pickup. In and out in 10 minutes and it was beautiful. Sometimes simple and fast is all you need.,birthday
+REV-197,Yelp,2024-03-30,4,Got a gorgeous arrangement for Mother's Day. The hydrangeas and roses together were beautiful. She said they lasted almost two weeks.,Mother's Day
+REV-198,Google,2024-04-02,3,Birthday arrangement was generic looking. I asked for something unique and creative but got a standard mixed bouquet. It was fine but not special.,birthday
+REV-199,Google,2024-04-04,5,Holiday party centerpieces were a hit. They matched our corporate colors without it looking forced. Will use them again next year.,
+REV-200,Google,2024-04-05,5,Ordered a sympathy arrangement for a coworker's family. The lilies were elegant and appropriate. They handled the delivery with care.,sympathy
+REV-201,Google,2024-04-06,5,Birthday flowers for my sister. Asked for something bright and cheerful and they nailed it. She said it was the highlight of her day.,birthday
+REV-202,Yelp,2024-04-13,4,Sent Mother's Day flowers to both my mom and mother-in-law. Both arrangements were beautiful but different. They clearly put thought into each one.,Mother's Day
+REV-203,Yelp,2024-04-15,5,"Picked up a celebratory bouquet for my son's graduation and it was perfect. Bright, cheerful, and very fresh. The staff even wrapped it with a ribbon.",graduation
+REV-204,Google,2024-04-16,3,Sympathy flowers were appropriate but nothing special. They did the job. Delivery was on time which is what mattered most.,
+REV-205,Yelp,2024-04-17,5,Walked in on a random Tuesday and they had a great selection of ferns and tropical plants. Staff were knowledgeable and fun to talk to.,
+REV-206,Google,2024-04-18,5,Walked in on a random Tuesday and they had a great selection of ferns and tropical plants. Staff were knowledgeable and fun to talk to.,walk-in
+REV-207,Google,2024-04-23,2,Graduation bouquet was already wilting when I picked it up. Had to ask them to redo it which made me late to the ceremony. Stressful.,graduation
+REV-208,Google,2024-04-24,3,"Used them for wedding flowers and while the final product was OK, the communication leading up to the event was stressful. Took a long time to get responses.",wedding
+REV-209,Google,2024-04-27,5,Sent a sympathy bouquet and received a thank you note saying the flowers were lovely. The white lilies and greenery were a perfect choice.,
+REV-210,Google,2024-05-02,1,Placed a large corporate order and they forgot one of the three arrangements. Had to scramble to cover an empty table at our event. Unprofessional.,corporate
+REV-211,Google,2024-05-02,5,This is my third year getting Mother's Day flowers here. They always remember that my mom loves pink peonies. That kind of personal service means a lot.,Mother's Day
+REV-212,Google,2024-05-03,3,Sympathy flowers were appropriate but nothing special. They did the job. Delivery was on time which is what mattered most.,sympathy
+REV-213,Google,2024-05-04,3,"Nice shop, nice people, but the hours are inconsistent. I've shown up twice during posted hours to find it closed. Flowers are good when they're open.",
+REV-214,Google,2024-05-06,1,Bought what was supposed to be a premium bouquet and found a few dead stems hidden inside when I got home. Felt dishonest.,walk-in
+REV-215,Google,2024-05-07,5,Needed 5 small bouquets for our graduating team members and they put them together same-day. Bright and professional. Everyone loved them.,graduation
+REV-216,Google,2024-05-08,2,Mother's Day arrangement was much smaller than what was shown online. My mom was polite about it but I could tell she was underwhelmed. Not ordering again.,Mother's Day
+REV-217,Google,2024-05-10,3,"Graduation bouquet was OK but the flowers seemed a bit tired. Not wilting exactly, just not the freshest. Serviceable but I've seen better.",graduation
+REV-218,Google,2024-05-10,5,Sent peonies to my mom for Mother's Day and she absolutely loved them. The delivery was right on time and the flowers were incredibly fresh.,Mother's Day
+REV-219,Google,2024-05-11,5,Ordered online for Mother's Day delivery across town. Flowers arrived in perfect condition. Mom sent me a photo and they looked amazing.,Mother's Day
+REV-220,Google,2024-05-12,5,"Picked up a Mother's Day bouquet on my way to brunch and it was ready in five minutes. Peonies and roses, wrapped perfectly. Mom was so happy.",Mother's Day
+REV-221,Google,2024-05-12,5,Wandered in after dinner at a nearby restaurant and left with the most beautiful hydrangea plant. It's now the centerpiece of my living room.,walk-in
+REV-222,Google,2024-05-12,5,Got a gorgeous arrangement for Mother's Day. The hydrangeas and roses together were beautiful. She said they lasted almost two weeks.,Mother's Day
+REV-223,Yelp,2024-05-13,5,This is my third year getting Mother's Day flowers here. They always remember that my mom loves pink peonies. That kind of personal service means a lot.,
+REV-224,Yelp,2024-05-13,5,For our 10th anniversary they suggested a premium arrangement with peonies and garden roses. It was the most beautiful thing I've ever brought home.,anniversary
+REV-225,Google,2024-05-14,5,Sent peonies to my mom for Mother's Day and she absolutely loved them. The delivery was right on time and the flowers were incredibly fresh.,Mother's Day
+REV-226,Google,2024-05-14,5,Ordered online for Mother's Day delivery across town. Flowers arrived in perfect condition. Mom sent me a photo and they looked amazing.,Mother's Day
+REV-227,Yelp,2024-05-14,2,Called to ask about Mother's Day availability and was put on hold for 15 minutes before getting disconnected. Ended up going somewhere else.,Mother's Day
+REV-228,Yelp,2024-05-16,5,Bought a couple of house plants on a whim and they're still thriving months later. The owner gave me care tips which was really nice.,walk-in
+REV-229,Yelp,2024-05-17,1,"Hospital delivery took two days instead of same-day as promised. When they finally arrived, the arrangement was smaller than what I ordered. Not cool.",
+REV-230,Yelp,2024-05-18,5,Set up a recurring corporate order. They remember our preferences and the arrangements are always on point. Easy invoicing too.,corporate
+REV-231,Google,2024-05-21,3,Got my mom a bouquet for Mother's Day. It was nice enough but she said the one I got her last year from another place was better. Middle of the road.,
+REV-232,Yelp,2024-05-22,4,Came in last minute for Valentine's Day and they still had an amazing selection. The woman at the counter helped me put together something really special. Will be back!,Valentine's Day
+REV-233,Google,2024-05-22,4,"Needed sympathy flowers on short notice and they put together a beautiful, dignified arrangement in under an hour. Very compassionate staff.",sympathy
+REV-234,Yelp,2024-05-23,5,Bought flowers here for my first dinner party in my new apartment. The woman helped me pick something that matched my decor. So thoughtful.,walk-in
+REV-235,Yelp,2024-05-23,5,"Picked up a celebratory bouquet for my son's graduation and it was perfect. Bright, cheerful, and very fresh. The staff even wrapped it with a ribbon.",graduation
+REV-236,Google,2024-05-24,4,Called the day before Mother's Day in a panic and they squeezed in a delivery for me. The lilies were stunning. Can't thank them enough.,Mother's Day
+REV-237,Google,2024-05-24,5,"Came in looking for something specific and they didn't have it, but the owner suggested an alternative that turned out even better. Great customer service.",walk-in
+REV-238,Yelp,2024-05-25,5,Ordered a large arrangement for a graduation party centerpiece. Sunflowers and roses looked incredible. Got tons of compliments.,graduation
+REV-239,Google,2024-05-26,5,Came in last minute for Valentine's Day and they still had an amazing selection. The woman at the counter helped me put together something really special. Will be back!,Valentine's Day
+REV-240,Google,2024-05-29,4,Popped in to grab a simple bouquet for my apartment and ended up chatting with the owner for 20 minutes about plants. Such a gem of a shop.,walk-in
+REV-241,Yelp,2024-06-03,5,Valentine's delivery was flawless. Ordered by noon and it arrived by 3pm. The red and white roses together were a really nice touch.,Valentine's Day
+REV-242,Google,2024-06-05,2,Placed a large corporate order and they forgot one of the three arrangements. Had to scramble to cover an empty table at our event. Unprofessional.,corporate
+REV-243,Google,2024-06-07,2,Corporate event flowers were underwhelming for the price. Expected more given what we paid. The orchids were nice but everything else felt cheap.,corporate
+REV-244,Google,2024-06-09,5,Fern handled our rehearsal dinner flowers and they were so beautiful we wished we'd used them for the whole wedding. Elegant orchid arrangements.,wedding
+REV-245,Google,2024-06-11,3,"Our recurring office order has been inconsistent lately. Some weeks the arrangements are gorgeous, other weeks they look like an afterthought. Need more consistency.",corporate
+REV-246,Yelp,2024-06-12,4,The wedding centerpieces were absolutely stunning. Hydrangeas and gardenias everywhere. Multiple guests asked where we got our flowers.,wedding
+REV-247,Yelp,2024-06-12,2,Placed a large corporate order and they forgot one of the three arrangements. Had to scramble to cover an empty table at our event. Unprofessional.,corporate
+REV-248,Yelp,2024-06-13,5,They do monthly flowers for our reception desk and it always looks polished. The team loves when the new arrangement arrives. Great morale booster.,corporate
+REV-249,Google,2024-06-13,5,Quick stop before the graduation ceremony and they had exactly what I needed. Cheerful mixed bouquet that photographed beautifully.,
+REV-250,Google,2024-06-23,5,Bought a couple of house plants on a whim and they're still thriving months later. The owner gave me care tips which was really nice.,
+REV-251,Yelp,2024-06-23,3,Decent selection and the staff is friendly enough. Nothing wrong with the experience but nothing memorable either. Just average.,walk-in
+REV-252,Yelp,2024-06-28,5,The storefront is beautiful and the inside is even better. Grabbed a bouquet of wildflowers on impulse and they brightened my whole apartment.,walk-in
+REV-253,Google,2024-07-01,5,"Perfect little florist. Not a chain, not pretentious, just good flowers at fair prices. Exactly what a neighborhood shop should be.",walk-in
+REV-254,Google,2024-07-07,3,Wedding trial arrangement was beautiful but the actual day arrangements were a step down. Not terrible but noticeable. Wish they had been more consistent.,wedding
+REV-255,Yelp,2024-07-07,4,Set up a recurring corporate order. They remember our preferences and the arrangements are always on point. Easy invoicing too.,corporate
+REV-256,Google,2024-07-12,5,"Grabbed a mixed bouquet for my kitchen table. Nothing fancy, just fresh and pretty. Love supporting this family business.",
+REV-257,Google,2024-07-22,5,The wedding centerpieces were absolutely stunning. Hydrangeas and gardenias everywhere. Multiple guests asked where we got our flowers.,wedding
+REV-258,Google,2024-07-30,5,Fern handled our rehearsal dinner flowers and they were so beautiful we wished we'd used them for the whole wedding. Elegant orchid arrangements.,wedding
+REV-259,Google,2024-07-31,3,Prices have gone up quite a bit since last year. The flowers are still nice but I'm not sure the value is there anymore for casual purchases.,walk-in
+REV-260,Google,2024-07-31,5,Ordered a sympathy arrangement to be delivered to a funeral home and they coordinated everything. One less thing to worry about during a hard time.,
+REV-261,Google,2024-08-03,4,The Mother's Day special was a great deal. Got a big arrangement of mixed flowers for a very reasonable price. Mom was thrilled.,Mother's Day
+REV-262,Google,2024-08-09,4,The standing spray for my uncle's service was beautiful. All white flowers with some greenery. Multiple family members commented on how lovely it was.,sympathy
+REV-263,Yelp,2024-08-10,5,The standing spray for my uncle's service was beautiful. All white flowers with some greenery. Multiple family members commented on how lovely it was.,sympathy
+REV-264,Google,2024-08-10,5,Stumbled on this place walking by and the storefront display caught my eye. Went in and picked up the most gorgeous fern. Prices were fair.,walk-in
+REV-265,Google,2024-08-14,5,Stopped in to pick up a plant for my desk at work. The selection of small potted plants is great. Ended up getting two because they were so cute.,walk-in
+REV-266,Yelp,2024-08-21,4,Ordered a get-well arrangement for my coworker at MGH. They delivered within 3 hours and my coworker said the nurses all commented on how pretty it was.,
+REV-267,Google,2024-08-23,5,Did our wedding flowers through Fern and they exceeded expectations. The bridal bouquet was exactly what I envisioned. Peonies and garden roses were perfect.,
+REV-268,Yelp,2024-09-01,5,"Perfect little florist. Not a chain, not pretentious, just good flowers at fair prices. Exactly what a neighborhood shop should be.",walk-in
+REV-269,Google,2024-09-02,4,My mom's 70th birthday arrangement was exactly what I described over the phone. Pink roses and white lilies. She cried when it arrived. Perfect.,
+REV-270,Yelp,2024-09-12,5,"Bought sunflowers for my daughter's Northeastern graduation. Beautiful and bright, great price, ready in 20 minutes. Highly recommend.",graduation
+REV-271,Google,2024-09-19,5,Had them do a custom Valentine's arrangement mixing roses with some eucalyptus. It was different from anything I've seen and my girlfriend loved the creativity.,Valentine's Day
+REV-272,Yelp,2024-09-22,5,Got a colorful birthday arrangement for my best friend and she was so happy. The mix of colors was perfect and it was ready in 15 minutes.,birthday
+REV-273,Yelp,2024-09-29,4,Mother's Day bouquet arrived with a small potted succulent as a bonus. Such a thoughtful extra touch. Mom keeps the succulent on her windowsill now.,Mother's Day
+REV-274,Google,2024-10-01,5,Had them do a custom Valentine's arrangement mixing roses with some eucalyptus. It was different from anything I've seen and my girlfriend loved the creativity.,Valentine's Day
+REV-275,Yelp,2024-10-07,3,Anniversary arrangement was pretty but the gardenias browned quickly. The roses held up fine though. Mixed results overall.,anniversary
+REV-276,Yelp,2024-10-08,4,Got a birthday arrangement for my roommate and they included a little happy birthday pick in it without me even asking. Cute detail.,birthday
+REV-277,Google,2024-10-10,3,Sympathy flowers were appropriate but nothing special. They did the job. Delivery was on time which is what mattered most.,sympathy
+REV-278,Yelp,2024-10-11,5,For our 10th anniversary they suggested a premium arrangement with peonies and garden roses. It was the most beautiful thing I've ever brought home.,anniversary
+REV-279,Google,2024-10-14,3,"Nice shop, nice people, but the hours are inconsistent. I've shown up twice during posted hours to find it closed. Flowers are good when they're open.",
+REV-280,Google,2024-10-18,2,Graduation bouquet was already wilting when I picked it up. Had to ask them to redo it which made me late to the ceremony. Stressful.,graduation
+REV-281,Google,2024-10-18,5,Popped in to grab a simple bouquet for my apartment and ended up chatting with the owner for 20 minutes about plants. Such a gem of a shop.,walk-in
+REV-282,Google,2024-10-20,4,"Perfect little florist. Not a chain, not pretentious, just good flowers at fair prices. Exactly what a neighborhood shop should be.",walk-in
+REV-283,Google,2024-10-30,3,"Our recurring office order has been inconsistent lately. Some weeks the arrangements are gorgeous, other weeks they look like an afterthought. Need more consistency.",corporate
+REV-284,Google,2024-11-05,4,Sent a sympathy bouquet and received a thank you note saying the flowers were lovely. The white lilies and greenery were a perfect choice.,sympathy
+REV-285,Yelp,2024-11-10,3,Anniversary arrangement was pretty but the gardenias browned quickly. The roses held up fine though. Mixed results overall.,
+REV-286,Yelp,2024-11-11,5,Got a gorgeous arrangement for Mother's Day. The hydrangeas and roses together were beautiful. She said they lasted almost two weeks.,Mother's Day
+REV-287,Yelp,2024-11-12,2,Graduation bouquet was already wilting when I picked it up. Had to ask them to redo it which made me late to the ceremony. Stressful.,graduation
+REV-288,Google,2024-11-15,1,Bought what was supposed to be a premium bouquet and found a few dead stems hidden inside when I got home. Felt dishonest.,walk-in
+REV-289,Google,2024-11-16,5,Great neighborhood spot. Bought a simple arrangement for a dinner party and everyone thought I spent way more than I did. Will definitely be back.,walk-in
+REV-290,Google,2024-11-18,5,"Bought sunflowers for my daughter's Northeastern graduation. Beautiful and bright, great price, ready in 20 minutes. Highly recommend.",graduation
+REV-291,Google,2024-11-28,3,"Our recurring office order has been inconsistent lately. Some weeks the arrangements are gorgeous, other weeks they look like an afterthought. Need more consistency.",corporate
+REV-292,Yelp,2024-12-04,5,Sent a birthday arrangement to a friend. They loved the surprise. Good variety of flowers and it lasted well over a week.,birthday
+REV-293,Google,2024-12-05,5,Been coming here for years and the quality never drops. Even a simple $15 bouquet from here looks like it cost three times that. Love this place.,walk-in
+REV-294,Yelp,2024-12-06,2,The shop was closed during posted hours which was frustrating. When I came back the next day the selection was good but that was annoying.,walk-in
+REV-295,Google,2024-12-07,5,Holiday party centerpieces were a hit. They matched our corporate colors without it looking forced. Will use them again next year.,corporate
+REV-296,Yelp,2024-12-09,4,They remembered us from last year's anniversary order and asked if we wanted something similar or different this time. That personal touch means everything.,anniversary
+REV-297,Yelp,2024-12-14,5,Got gardenias for our anniversary and my wife was blown away by the fragrance. They customized the arrangement exactly how I described. Incredible.,anniversary
+REV-298,Google,2024-12-21,5,Love this little shop on Mass Ave. Always stop in when I'm in the area. Great prices and the flowers are always super fresh.,walk-in
+REV-299,Yelp,2024-12-22,4,Picked up a fern and an air plant on my lunch break. The guy working explained how to care for each one. My office plants are thriving now.,walk-in
+REV-300,Google,2024-12-23,5,They do monthly flowers for our reception desk and it always looks polished. The team loves when the new arrangement arrives. Great morale booster.,corporate
+REV-301,Yelp,2024-12-23,2,Ordered orchids for a sympathy arrangement. The flowers were fine but the arrangement looked nothing like the photo online. Very upsetting given the occasion.,sympathy
+REV-302,Google,2024-12-24,5,Ordered arrangements for a client dinner and they were elegant without being over the top. Several clients commented on them. Good representation of our brand.,corporate
+REV-303,Google,2024-12-25,5,Ordered a large Mother's Day arrangement for my grandmother. The mix of spring flowers was cheerful and bright. She displayed it in her living room all week.,Mother's Day
+REV-304,Yelp,2024-12-25,3,Great tulips for Valentine's but the line was really long. They were fresh and lasted over a week though. Worth the wait I guess.,Valentine's Day
+REV-305,Google,2024-12-28,5,Quick delivery to Beth Israel. The arrangement was fresh and cheerful. Exactly what my mom needed to feel better.,hospital
+REV-306,Yelp,2024-12-28,2,Flowers were fine but the delivery was 4 hours late. On Valentine's Day that's a big deal. My partner thought I forgot.,Valentine's Day
+REV-307,Google,2024-12-29,5,My husband surprised me with Valentine's flowers from here and I was so impressed. The arrangement was elegant and not the generic dozen roses you see everywhere.,Valentine's Day
+REV-308,Google,2024-12-29,4,"Grabbed a mixed bouquet for my kitchen table. Nothing fancy, just fresh and pretty. Love supporting this family business.",
+REV-309,Yelp,2024-12-31,5,Set up a recurring corporate order. They remember our preferences and the arrangements are always on point. Easy invoicing too.,corporate
+REV-310,Google,2024-12-31,4,Graduation flowers for my niece. Asked for her school colors and they made it work with real flowers. Creative and thoughtful.,graduation

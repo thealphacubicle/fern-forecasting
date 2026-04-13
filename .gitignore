@@ -165,3 +165,5 @@ Desktop.ini
 .env.*.local
 *.bak
 *.tmp
+
+# Data
