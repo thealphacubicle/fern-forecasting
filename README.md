@@ -91,10 +91,7 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 
 ---
 
-## Analysis Notebooks
-
-The three notebooks in `src/notebooks/` are the core deliverables. 
-Run them in order:
+## Analysis Notebooks and Models
 
 ### `src/notebooks/01_eda.ipynb` — Exploratory Data Analysis
 - Loads all four raw datasets and profiles each one (shape, dtypes, date ranges)
@@ -148,6 +145,9 @@ Run them in order:
 
 ## Model Performance
 
+Results from `models/demand_forecasting.ipynb`:
+
+| Model | MAE | R² | Notes |
 | Model | MAE | R² | Notes |
 |---|---|---|---|
 | Linear Regression | 4.49 | -0.124 | Baseline  (fails due to non-linear holiday spikes) |
