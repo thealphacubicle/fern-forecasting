@@ -152,7 +152,7 @@ Results from `models/demand_forecasting.ipynb`:
 | Model | MAE | R² | Notes |
 |---|---|---|---|
 | Linear Regression | 4.49 | -0.124 | Baseline  (fails due to non-linear holiday spikes) |
-| Gradient Boosting | 2.31 | 0.664 | Final model used in simulation and dashboard |
+| Gradient Boosting | 2.31 | 0.692 | Final model used in simulation and dashboard |
 
 The Linear Regression failure is intentional. It demonstrates that 
 floral demand is non-linear and justifies the Gradient Boosting approach.
