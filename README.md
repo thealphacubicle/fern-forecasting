@@ -1,4 +1,4 @@
-# 🌿 Fern Forecasting
+# Fern Forecasting
 
 AI-powered demand forecasting and customer sentiment analysis for **Fern (Boston Rose Florist) a family-owned floral shop at 225 Massachusetts Ave, Boston, MA.
 
@@ -33,7 +33,7 @@ customer sentiment tracker.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 fern-forecasting/
@@ -92,18 +92,25 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 
 ---
 
-## 🔬 Analysis Notebooks
+## Analysis Notebooks
 
 The three notebooks in `src/notebooks/` are the core deliverables. 
 Run them in order:
 
-### `01_eda.ipynb` : Exploratory Data Analysis
-- Loads and merges all four datasets
-- Surfaces key patterns: holiday demand spikes, waste by product, 
-  sentiment distribution
-- Motivates the two analytical methods
+### `src/notebooks/01_eda.ipynb` — Exploratory Data Analysis
+- Loads all four raw datasets and profiles each one (shape, dtypes, date ranges)
+- **Calendar:** explores holiday distribution, weather patterns, university 
+  event weeks across 731 days (Jan 2023–Dec 2024)
+- **Inventory:** profiles units ordered vs sold vs wasted by product category; 
+  surfaces waste patterns that motivate the forecasting model
+- **Orders:** explores transaction volume by occasion, product category, 
+  channel (in-store vs online), and day of week
+- **Reviews:** profiles star rating distribution across 310 reviews by 
+  platform (Google vs Yelp) and occasion
+- Key output: establishes the data quality and structure that feeds into 
+  `demand_forecasting.ipynb` and `02_sentiment_analysis.ipynb`
 
-### `02_sentiment_analysis.ipynb` : Customer Sentiment Analysis
+### `src/notebooks/02_sentiment_analysis.ipynb`: Customer Sentiment Analysis
 - Scores all 310 reviews using **VADER** sentiment analysis
 - Applies **LDA topic modeling** to find 5 recurring themes in review text
 - Key finding: walk-in customers are Fern's highest-volume but 
@@ -111,7 +118,7 @@ Run them in order:
   both high volume and high sentiment
 - Overall: 77% positive rate, avg sentiment score of +0.47
 
-### `03_value_argument.ipynb` : Waste Savings Simulation
+### `src/notebooks/03_value_argument.ipynb` : Waste Savings Simulation
 - Trains a **Gradient Boosting** model on the weekly panel dataset
 - Simulates model-based ordering (5% buffer) vs Fern's current 
   intuition-based ordering
@@ -120,9 +127,27 @@ Run them in order:
 - Connected to the dashboard's "How We Did" page which implements 
   the same simulation interactively
 
+### `models/demand_forecasting.ipynb`: Feature Engineering & Model Development
+- Built and tested the full feature engineering pipeline on the weekly panel dataset
+- Identified and removed data leakage (dropped same-week derivatives like 
+  `total_revenue`, `units_wasted`, `sell_through_rate`)
+- Compared Linear Regression vs Gradient Boosting — LR failed (R² = -0.124) 
+  proving demand is non-linear; GB succeeded (R² = 0.664, MAE = 2.31)
+- Contains the feature importance analysis and model interpretation
+- **This notebook is the analytical foundation for the dashboard's 
+  `fit_all_forecasts()` function in `dashboard.py`**
+
+### `models/fern_main_analysis.ipynb`: Combined EDA and Full Analysis
+- Loads all four raw datasets and merges into a unified daily-level DataFrame
+- Full EDA: holiday demand spikes, waste by product category, revenue trends
+- Key finding: **$41,394 in total waste costs** over 2023–2024 (10.8% of revenue)
+- Contains sentiment analysis integration showing which occasions feed into 
+  the demand forecasting features
+- Serves as the complete end-to-end analysis narrative for the presentation
+
 ---
 
-## 📈 Model Performance
+## Model Performance
 
 | Model | MAE | R² | Notes |
 |---|---|---|---|
