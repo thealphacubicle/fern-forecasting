@@ -63,7 +63,6 @@ fern-forecasting/
 ├── figures/
 ├── models/                                     # ANALYSIS NOTEBOOKS
 │   ├── demand_forecasting.ipynb                # full EDA, identifies waste problem
-│   └── fern_main_analysis.ipynb                # GB model training and evaluation
 ├── src/
 │   ├── fern_forecasting/                       # DASHBOARD ENGINE
 │   │   ├── dashboard.py                        # functions: GB model, simulation, alerts
@@ -76,6 +75,8 @@ fern-forecasting/
 │   └── scripts/
 │       ├── clean_raw.py
 │       └── build_panel.py
+├── archive/
+│   └── fern_main_analysis.ipynb                # combined analysis (archived)
 ├── pyproject.toml
 ├── requirements.txt
 └── README.md
@@ -96,39 +97,51 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 
 ---
 
-## Analysis Notebooks and Models
+## Analysis Notebooks and Workflow
 
-These four notebooks are the analytical foundation of the project. 
-Run them in this order:
+### 1. src/notebooks/01_eda.ipynb — Exploratory Data Analysis
 
-### 1. `models/fern_main_analysis.ipynb` — EDA
-Loads all four raw datasets and surfaces the core business problem. 
-Key finding: Fern wasted **$41,394** over 2023–2024 (10.8% of revenue), 
-motivating the need for data-driven inventory management.
+- Introduces the four datasets and surfaces the core business problem.
+- Merges orders, calendar, inventory, and review data
+- Identifies strong demand spikes driven by holidays and occasions
+- Quantifies inventory inefficiency
 
-### 2. `models/demand_forecasting.ipynb` — Demand Forecasting Model
-Builds and evaluates the Gradient Boosting demand forecasting model.
-- Tested Linear Regression as baseline — failed (R² = -0.124), proving 
-  demand is non-linear due to holiday spikes
-- Gradient Boosting succeeded (R² = 0.664, MAE = 2.31 units)
-- Contains feature engineering, leakage detection, and model interpretation
-- This is the analytical foundation for `dashboard.py`
+Key finding: Fern wasted $41,394 over 2023–2024 (10.8% of revenue), hence the need for data-driven ordering.
 
-### 3. `src/notebooks/02_sentiment_analysis.ipynb` — Customer Sentiment Analysis
-Analyzes 310 customer reviews using two NLP methods:
-- **VADER sentiment scoring** — 77% positive overall, avg score +0.47
-- **LDA topic modeling** — 5 topics: Valentine's/romance, delivery/sympathy, 
-  special occasions, holiday planning, walk-in/houseplants
-- Key finding: walk-in customers are highest volume but lowest satisfaction
-- Valentine's Day and Mother's Day have both high sentiment AND high demand
+### 2. models/demand_forecasting.ipynb — Demand Forecasting Model
 
-### 4. `src/notebooks/03_value_argument.ipynb` — Waste Savings Simulation
-Translates model predictions into business value:
-- Simulates model-based ordering (5% buffer) vs Fern's current approach
-- Result: **32% reduction in waste costs**, **$851 projected annual savings**
-- Connected to the "How We Did" dashboard page which runs this simulation live
+- Builds and evaluates the Gradient Boosting model used to predict demand.
+- Constructs time-based and calendar features (holiday flags, lags, seasonality)
+- Compares Linear Regression vs Gradient Boosting
+- Evaluates model performance and interpretability
 
+Results:
+- Linear Regression fails (R² = -0.124) due to non-linearity. 
+- RF was also tested, but had slightly lower R^2
+- Gradient Boosting performs well (R² = 0.692, MAE = 2.31 units)
 
+This notebook provides the modeling foundation for the Streamlit dashboard.
+
+### 3. src/notebooks/02_sentiment_analysis.ipynb — Customer Sentiment Analysis
+
+- Analyzes 310 customer reviews to uncover demand drivers.
+- VADER sentiment scoring → overall sentiment = +0.47
+- LDA topic modeling → identifies 5 key customer themes
+
+Results:
+- Walk-in customers = high volume, low satisfaction
+- Valentine's Day & Mother’s Day = high demand AND high sentiment
+
+### 4. src/notebooks/03_value_argument.ipynb — Business Impact Simulation
+
+- Translates model predictions into financial value.
+- Simulates model-driven ordering vs current approach
+- Applies a 5% safety buffer
+- Estimates cost savings
+
+Result:
+- 32% reduction in waste costs
+- $851 projected annual savings
 ---
 
 ## Model Performance
