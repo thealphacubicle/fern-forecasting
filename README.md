@@ -1,8 +1,6 @@
 # 🌿 Fern Forecasting
 
-> AI-powered demand forecasting and customer sentiment analysis for **Fern 
-> (Boston Rose Florist)** — a family-owned floral shop at 225 Massachusetts 
-> Ave, Boston, MA.
+AI-powered demand forecasting and customer sentiment analysis for **Fern (Boston Rose Florist) a family-owned floral shop at 225 Massachusetts Ave, Boston, MA.
 
 Built for MKTG 4604: *Creating Business Value with Data and AI Technologies*  
 Northeastern University, Spring 2026
@@ -35,52 +33,49 @@ customer sentiment tracker.
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
+
+```
 fern-forecasting/
 ├── app/
 │   ├── pages/
-│   │   ├── 1_Demand_Outlook.py       # 8-week forward forecast by product
-│   │   ├── 2_Order_Sheet.py          # Weekly recommended order + CSV export
-│   │   ├── 3_How_We_Did.py           # Retrospective waste simulation
-│   │   └── 4_Customer_Sentiment_Analysis.py  # VADER sentiment + occasion leaderboard
-│   └── Home.py                       # Alert-driven home page
-│
+│   │   ├── 1_Demand_Outlook.py
+│   │   ├── 2_Order_Sheet.py
+│   │   ├── 3_How_We_Did.py
+│   │   └── 4_Customer_Sentiment_Analysis.py
+│   └── Home.py
 ├── data/
-│   ├── raw/                          # Original CSVs from Professor Katz
-│   │   ├── fern_orders.csv           # 5,769 transactions (Jan 2023–Dec 2024)
-│   │   ├── fern_calendar.csv         # Daily: holidays, weather, university events
-│   │   ├── fern_inventory.csv        # Weekly: units ordered, sold, wasted per product
-│   │   └── fern_reviews.csv          # 310 Google + Yelp reviews
-│   └── processed/                    # Cleaned parquet files (built by scripts)
+│   ├── raw/
+│   │   ├── fern_orders.csv
+│   │   ├── fern_calendar.csv
+│   │   ├── fern_inventory.csv
+│   │   └── fern_reviews.csv
+│   └── processed/
 │       ├── orders_clean.parquet
 │       ├── calendar_clean.parquet
 │       ├── inventory_clean.parquet
 │       ├── reviews_clean.parquet
-│       └── weekly_panel.parquet      # Master modeling dataset
-│
-├── figures/                          # Charts exported from notebooks
-│
+│       └── weekly_panel.parquet
+├── figures/
 ├── models/
-│   ├── demand_forecasting.ipynb      # Model training + evaluation
-│   └── fern_main_analysis.ipynb      # Full combined analysis
-│
+│   ├── demand_forecasting.ipynb
+│   └── fern_main_analysis.ipynb
 ├── src/
 │   ├── fern_forecasting/
-│   │   ├── dashboard.py              # Core functions: model, simulation, alerts
-│   │   ├── features.py               # Feature engineering
-│   │   └── preprocessing.py          # Data cleaning pipeline
+│   │   ├── dashboard.py
+│   │   ├── features.py
+│   │   └── preprocessing.py
 │   ├── notebooks/
-│   │   ├── 01_eda.ipynb              # Exploratory data analysis
-│   │   ├── 02_sentiment_analysis.ipynb  # VADER scoring + LDA topic modeling
-│   │   └── 03_value_argument.ipynb   # Waste savings simulation
+│   │   ├── 01_eda.ipynb
+│   │   ├── 02_sentiment_analysis.ipynb
+│   │   └── 03_value_argument.ipynb
 │   └── scripts/
-│       ├── clean_raw.py              # Cleans raw CSVs → parquets
-│       └── build_panel.py            # Builds weekly_panel.parquet
-│
+│       ├── clean_raw.py
+│       └── build_panel.py
 ├── pyproject.toml
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Data
