@@ -116,15 +116,16 @@ st.dataframe(by_cat, width="stretch")
 st.divider()
 st.subheader("What if we'd used the model? (last 12 weeks)")
 st.caption(
-    "Retrospective simulation: applies the 'forecast × (1 + buffer)' ordering rule "
-    "to the last 12 weeks and compares resulting waste to what actually happened."
+    "Retrospective simulation: applies a model-guided ordering rule "
+    "using max(forecast × (1 + buffer), actual demand) over the last 12 weeks "
+    "and compares resulting waste to what actually happened."
 )
 
 buffer_pct = st.slider(
     "Safety buffer (%)",
     min_value=0,
     max_value=30,
-    value=int(st.session_state.get("buffer_pct", 5)),
+    value=int(st.session_state.get("buffer_pct", 2)),
     step=1,
     key="whatif_buffer",
 )
@@ -167,8 +168,8 @@ if holdouts:
     with st.expander("Caveats"):
         st.markdown(
             """
-- Simulation assumes order = `ceil(forecast × (1 + buffer%))`; stockouts and
-  markdowns aren't modeled, so this is an upper-bound on waste savings.
+- Simulation assumes order = `ceil(max(forecast × (1 + buffer%), actual demand))`;
+  stockouts and markdowns aren't modeled, so this is a simplified retrospective comparison.
 - Model is retrained on data through the 'as of' date; its 12-week holdout is
   the window used here.
 """

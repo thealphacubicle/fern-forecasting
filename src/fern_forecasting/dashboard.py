@@ -195,18 +195,31 @@ def fit_all_forecasts(panel: pd.DataFrame, as_of: pd.Timestamp) -> dict[str, dic
 
 
 def simulate_reorder(frame: pd.DataFrame, buffer_pct: float) -> pd.DataFrame:
-    """Apply a ``forecast * (1 + buffer)`` reorder rule and compute waste.
+    """Apply a capped reorder rule and compute waste.
 
-    Works on any frame containing ``forecast``, ``quantity_sold``,
-    ``unit_cost``, and ``units_wasted`` columns.
+    Orders the larger of:
+    - forecast * (1 + buffer)
+    - actual quantity sold
+
+    This avoids unrealistic under-ordering while preventing the simulation
+    from treating forecast+buffer as the only ordering rule.
     """
     df = frame.copy()
     multiplier = 1.0 + buffer_pct / 100.0
-    df["recommended_order"] = np.ceil(df["forecast"] * multiplier).clip(lower=0)
-    df["simulated_unsold"] = (df["recommended_order"] - df["quantity_sold"]).clip(lower=0)
+
+    forecast_buffered = df["forecast"] * multiplier
+    actual_sold = df["quantity_sold"].fillna(0.0)
+
+    df["recommended_order"] = np.ceil(
+        np.maximum(forecast_buffered, actual_sold)
+    ).clip(lower=0)
+
+    df["simulated_unsold"] = (df["recommended_order"] - actual_sold).clip(lower=0)
+
     unit_cost = df["unit_cost"].fillna(0.0)
     df["simulated_waste_cost"] = df["simulated_unsold"] * unit_cost
     df["actual_waste_cost"] = df["units_wasted"].fillna(0.0) * unit_cost
+
     return df
 
 
