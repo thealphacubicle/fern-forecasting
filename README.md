@@ -93,19 +93,6 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 
 ## Analysis Notebooks and Models
 
-### `src/notebooks/01_eda.ipynb` — Exploratory Data Analysis
-- Loads all four raw datasets and profiles each one (shape, dtypes, date ranges)
-- **Calendar:** explores holiday distribution, weather patterns, university 
-  event weeks across 731 days (Jan 2023–Dec 2024)
-- **Inventory:** profiles units ordered vs sold vs wasted by product category; 
-  surfaces waste patterns that motivate the forecasting model
-- **Orders:** explores transaction volume by occasion, product category, 
-  channel (in-store vs online), and day of week
-- **Reviews:** profiles star rating distribution across 310 reviews by 
-  platform (Google vs Yelp) and occasion
-- Key output: establishes the data quality and structure that feeds into 
-  `demand_forecasting.ipynb` and `02_sentiment_analysis.ipynb`
-
 ### `src/notebooks/02_sentiment_analysis.ipynb`: Customer Sentiment Analysis
 - Scores all 310 reviews using **VADER** sentiment analysis
 - Applies **LDA topic modeling** to find 5 recurring themes in review text
