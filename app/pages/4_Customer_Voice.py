@@ -13,7 +13,7 @@ from fern_forecasting.dashboard import (
     render_as_of_sidebar,
 )
 
-st.set_page_config(page_title="Customer Voice", layout="wide")
+st.set_page_config(page_title="Customer Satisfaction Analysis", layout="wide")
 
 
 @st.cache_data
