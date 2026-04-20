@@ -34,18 +34,23 @@ customer sentiment tracker.
 
 ## Repository Structure
 
+There are two distinct parts to this project:
+
+**1. Analysis Notebooks** — proof-of-concept analysis submitted to Canvas  
+**2. Dashboard Code** — interactive Streamlit tool built on top of the analysis
+
 ```
 fern-forecasting/
-├── app/
+├── app/                                        # DASHBOARD CODE
 │   ├── pages/
 │   │   ├── 1_Demand_Outlook.py
 │   │   ├── 2_Order_Sheet.py
 │   │   ├── 3_How_We_Did.py
 │   │   └── 4_Customer_Sentiment_Analysis.py
-│   └── Home.py
+│   └── Home.py                                 # home page with weekly alerts
 ├── data/
 │   ├── raw/
-│   │   ├── fern_orders.csv
+│   │   ├── fern_orders.csv 
 │   │   ├── fern_calendar.csv
 │   │   ├── fern_inventory.csv
 │   │   └── fern_reviews.csv
@@ -56,18 +61,18 @@ fern-forecasting/
 │       ├── reviews_clean.parquet
 │       └── weekly_panel.parquet
 ├── figures/
-├── models/
-│   ├── demand_forecasting.ipynb
-│   └── fern_main_analysis.ipynb
+├── models/                                     # ANALYSIS NOTEBOOKS
+│   ├── demand_forecasting.ipynb                # full EDA, identifies waste problem
+│   └── fern_main_analysis.ipynb                # GB model training and evaluation
 ├── src/
-│   ├── fern_forecasting/
-│   │   ├── dashboard.py
-│   │   ├── features.py
-│   │   └── preprocessing.py
-│   ├── notebooks/
-│   │   ├── 01_eda.ipynb
-│   │   ├── 02_sentiment_analysis.ipynb
-│   │   └── 03_value_argument.ipynb
+│   ├── fern_forecasting/                       # DASHBOARD ENGINE
+│   │   ├── dashboard.py                        # functions: GB model, simulation, alerts
+│   │   ├── features.py                         # feature engineering
+│   │   └── preprocessing.py                    # data cleaning
+│   ├── notebooks/                              # ANALYSIS NOTEBOOKS 
+│   │   ├── 01_eda.ipynb                        # extra EDA (can be ignored)
+│   │   ├── 02_sentiment_analysis.ipynb         # VADER scoring and LDA topic modeling
+│   │   └── 03_value_argument.ipynb             # Waste savings simulation
 │   └── scripts/
 │       ├── clean_raw.py
 │       └── build_panel.py
@@ -93,40 +98,36 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 
 ## Analysis Notebooks and Models
 
-### `src/notebooks/02_sentiment_analysis.ipynb`: Customer Sentiment Analysis
-- Scores all 310 reviews using **VADER** sentiment analysis
-- Applies **LDA topic modeling** to find 5 recurring themes in review text
-- Key finding: walk-in customers are Fern's highest-volume but 
-  lowest-satisfaction segment; Valentine's Day and Mother's Day have 
-  both high volume and high sentiment
-- Overall: 77% positive rate, avg sentiment score of +0.47
+These four notebooks are the analytical foundation of the project. 
+Run them in this order:
 
-### `src/notebooks/03_value_argument.ipynb` : Waste Savings Simulation
-- Trains a **Gradient Boosting** model on the weekly panel dataset
-- Simulates model-based ordering (5% buffer) vs Fern's current 
-  intuition-based ordering
-- Result: **32% reduction in waste costs**, projecting **$851 in 
-  annual savings**
-- Connected to the dashboard's "How We Did" page which implements 
-  the same simulation interactively
+### 1. `models/fern_main_analysis.ipynb` — EDA
+Loads all four raw datasets and surfaces the core business problem. 
+Key finding: Fern wasted **$41,394** over 2023–2024 (10.8% of revenue), 
+motivating the need for data-driven inventory management.
 
-### `models/demand_forecasting.ipynb`: Feature Engineering & Model Development
-- Built and tested the full feature engineering pipeline on the weekly panel dataset
-- Identified and removed data leakage (dropped same-week derivatives like 
-  `total_revenue`, `units_wasted`, `sell_through_rate`)
-- Compared Linear Regression vs Gradient Boosting — LR failed (R² = -0.124) 
-  proving demand is non-linear; GB succeeded (R² = 0.664, MAE = 2.31)
-- Contains the feature importance analysis and model interpretation
-- **This notebook is the analytical foundation for the dashboard's 
-  `fit_all_forecasts()` function in `dashboard.py`**
+### 2. `models/demand_forecasting.ipynb` — Demand Forecasting Model
+Builds and evaluates the Gradient Boosting demand forecasting model.
+- Tested Linear Regression as baseline — failed (R² = -0.124), proving 
+  demand is non-linear due to holiday spikes
+- Gradient Boosting succeeded (R² = 0.664, MAE = 2.31 units)
+- Contains feature engineering, leakage detection, and model interpretation
+- This is the analytical foundation for `dashboard.py`
 
-### `models/fern_main_analysis.ipynb`: Combined EDA and Full Analysis
-- Loads all four raw datasets and merges into a unified daily-level DataFrame
-- Full EDA: holiday demand spikes, waste by product category, revenue trends
-- Key finding: **$41,394 in total waste costs** over 2023–2024 (10.8% of revenue)
-- Contains sentiment analysis integration showing which occasions feed into 
-  the demand forecasting features
-- Serves as the complete end-to-end analysis narrative for the presentation
+### 3. `src/notebooks/02_sentiment_analysis.ipynb` — Customer Sentiment Analysis
+Analyzes 310 customer reviews using two NLP methods:
+- **VADER sentiment scoring** — 77% positive overall, avg score +0.47
+- **LDA topic modeling** — 5 topics: Valentine's/romance, delivery/sympathy, 
+  special occasions, holiday planning, walk-in/houseplants
+- Key finding: walk-in customers are highest volume but lowest satisfaction
+- Valentine's Day and Mother's Day have both high sentiment AND high demand
+
+### 4. `src/notebooks/03_value_argument.ipynb` — Waste Savings Simulation
+Translates model predictions into business value:
+- Simulates model-based ordering (5% buffer) vs Fern's current approach
+- Result: **32% reduction in waste costs**, **$851 projected annual savings**
+- Connected to the "How We Did" dashboard page which runs this simulation live
+
 
 ---
 
