@@ -19,11 +19,11 @@ unsold inventory.
 
 We built two AI tools to fix this:
 
-1. **Demand Forecasting** — a Gradient Boosting model that predicts weekly 
+1. **Demand Forecasting** : a Gradient Boosting model that predicts weekly 
    order volume per product category using holiday flags, weather, lag sales, 
    and university event calendars.
 
-2. **Customer Sentiment Analysis** — a VADER + LDA pipeline that scores 310 
+2. **Customer Sentiment Analysis** : a VADER + LDA pipeline that scores 310 
    customer reviews by occasion and surfaces which products and occasions drive 
    satisfaction (or dissatisfaction).
 
@@ -85,10 +85,10 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 
 | Dataset | Rows | Description |
 |---|---|---|
-| `fern_orders.csv` | 5,769 | One row per transaction — product, occasion, quantity, revenue |
-| `fern_calendar.csv` | 731 | One row per day — holidays, weather, university event flags |
-| `fern_inventory.csv` | 942 | One row per product per week — units ordered, sold, wasted |
-| `fern_reviews.csv` | 310 | One row per review — platform, star rating, review text, occasion |
+| `fern_orders.csv` | 5,769 | One row per transaction: product, occasion, quantity, revenue |
+| `fern_calendar.csv` | 731 | One row per day: holidays, weather, university event flags |
+| `fern_inventory.csv` | 942 | One row per product per week: units ordered, sold, wasted |
+| `fern_reviews.csv` | 310 | One row per review: platform, star rating, review text, occasion |
 
 ---
 
@@ -97,13 +97,13 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 The three notebooks in `src/notebooks/` are the core deliverables. 
 Run them in order:
 
-### `01_eda.ipynb` — Exploratory Data Analysis
+### `01_eda.ipynb` : Exploratory Data Analysis
 - Loads and merges all four datasets
 - Surfaces key patterns: holiday demand spikes, waste by product, 
   sentiment distribution
 - Motivates the two analytical methods
 
-### `02_sentiment_analysis.ipynb` — Customer Sentiment Analysis
+### `02_sentiment_analysis.ipynb` : Customer Sentiment Analysis
 - Scores all 310 reviews using **VADER** sentiment analysis
 - Applies **LDA topic modeling** to find 5 recurring themes in review text
 - Key finding: walk-in customers are Fern's highest-volume but 
@@ -111,7 +111,7 @@ Run them in order:
   both high volume and high sentiment
 - Overall: 77% positive rate, avg sentiment score of +0.47
 
-### `03_value_argument.ipynb` — Waste Savings Simulation
+### `03_value_argument.ipynb` : Waste Savings Simulation
 - Trains a **Gradient Boosting** model on the weekly panel dataset
 - Simulates model-based ordering (5% buffer) vs Fern's current 
   intuition-based ordering
@@ -126,10 +126,10 @@ Run them in order:
 
 | Model | MAE | R² | Notes |
 |---|---|---|---|
-| Linear Regression | 4.49 | -0.124 | Baseline — fails due to non-linear holiday spikes |
+| Linear Regression | 4.49 | -0.124 | Baseline  (fails due to non-linear holiday spikes) |
 | Gradient Boosting | 2.31 | 0.664 | Final model used in simulation and dashboard |
 
-The Linear Regression failure is intentional — it demonstrates that 
+The Linear Regression failure is intentional. It demonstrates that 
 floral demand is non-linear and justifies the Gradient Boosting approach.
 
 ---
@@ -145,7 +145,7 @@ streamlit run app/Home.py
 
 | Page | What It Does |
 |---|---|
-| **Home** | Alert-driven summary — flags waste, stockouts, sentiment drops |
+| **Home** | Alert-driven summary (flags waste, stockouts, sentiment drops) |
 | **Demand Outlook** | 8-week forward forecast by product category |
 | **Order Sheet** | Recommended weekly order with adjustable safety buffer |
 | **How We Did** | Retrospective waste simulation vs model-based ordering |
@@ -155,14 +155,14 @@ streamlit run app/Home.py
 
 ## Key Findings
 
-- Fern wasted **$41,394** over 2023–2024 — 10.8% of sold-unit revenue
+- Fern wasted **$41,394** over 2023–2024 - 10.8% of sold-unit revenue
 - Our GB model predicts weekly demand within **~2.3 units** on average
 - Model-based ordering reduces waste costs by **32%** (~$851/year)
 - **Birthday and wedding** arrangements have the highest customer sentiment
 - **Walk-in customers** are the highest-volume but lowest-satisfaction 
-  segment — suggesting understocking for impulse buyers
+  segment, suggesting understocking for impulse buyers
 - **Valentine's Day and Mother's Day** have both high demand AND high 
-  sentiment — confirming these are the right occasions to stock heavily
+  sentiment, confirming these are the right occasions to stock heavily
 
 ---
 
