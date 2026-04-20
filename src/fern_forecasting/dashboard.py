@@ -55,6 +55,34 @@ def load_reviews() -> pd.DataFrame:
     return df
 
 
+def load_reviews_scored() -> pd.DataFrame:
+    """Load reviews with VADER sentiment attached.
+
+    Prefers a precomputed ``reviews_scored.parquet`` (checked in so hosted
+    deployments don't need the NLTK lexicon). Falls back to scoring on the
+    fly if that file is absent.
+    """
+    scored_path = PROCESSED_DIR / "reviews_scored.parquet"
+    if scored_path.exists():
+        df = pd.read_parquet(scored_path)
+        df["review_date"] = pd.to_datetime(df["review_date"])
+        return df
+
+    import nltk
+    from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+    try:
+        nltk.data.find("sentiment/vader_lexicon")
+    except LookupError:
+        nltk.download("vader_lexicon", quiet=True)
+    analyzer = SentimentIntensityAnalyzer()
+    df = load_reviews()
+    df["sentiment"] = df["review_text_clean"].fillna("").apply(
+        lambda t: analyzer.polarity_scores(t)["compound"]
+    )
+    return df
+
+
 def load_orders() -> pd.DataFrame:
     """Load the cleaned orders parquet."""
     df = pd.read_parquet(PROCESSED_DIR / "orders_clean.parquet")

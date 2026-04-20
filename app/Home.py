@@ -11,15 +11,13 @@ Run from the repo root::
 
 from __future__ import annotations
 
-import nltk
 import pandas as pd
 import streamlit as st
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 from fern_forecasting.dashboard import (
     fit_all_forecasts,
     generate_alerts,
-    load_reviews,
+    load_reviews_scored,
     load_weekly_panel,
     render_as_of_sidebar,
     snap_to_monday,
@@ -33,23 +31,9 @@ def _panel() -> pd.DataFrame:
     return load_weekly_panel()
 
 
-@st.cache_resource
-def _sentiment_analyzer() -> SentimentIntensityAnalyzer:
-    try:
-        nltk.data.find("sentiment/vader_lexicon")
-    except LookupError:
-        nltk.download("vader_lexicon", quiet=True)
-    return SentimentIntensityAnalyzer()
-
-
 @st.cache_data
 def _reviews_scored() -> pd.DataFrame:
-    df = load_reviews()
-    analyzer = _sentiment_analyzer()
-    df["sentiment"] = df["review_text_clean"].fillna("").apply(
-        lambda t: analyzer.polarity_scores(t)["compound"]
-    )
-    return df
+    return load_reviews_scored()
 
 
 @st.cache_resource
