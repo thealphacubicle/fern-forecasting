@@ -1,6 +1,5 @@
 # Fern Forecasting
-
-AI-powered demand forecasting and customer sentiment analysis for **Fern (Boston Rose Florist) a family-owned floral shop at 225 Massachusetts Ave, Boston, MA.
+This project explores demand forecasting and customer sentiment analysis for Fern (Boston Rose Florist) a family-owned floral shop at 225 Massachusetts Ave, Boston, MA.
 
 Built for MKTG 4604: *Creating Business Value with Data and AI Technologies*  
 Northeastern University, Spring 2026
