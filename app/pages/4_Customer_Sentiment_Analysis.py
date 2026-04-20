@@ -1,4 +1,4 @@
-"""Customer Voice — recent reviews, flagged exceptions, occasion satisfaction."""
+"""Customer Sentiment Analysis: recent reviews, flagged exceptions, occasion satisfaction."""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ from fern_forecasting.dashboard import (
     render_as_of_sidebar,
 )
 
-st.set_page_config(page_title="Customer Satisfaction Analysis", layout="wide")
+st.set_page_config(page_title="Customer Sentiment Analysis", layout="wide")
 
 
 @st.cache_data
@@ -46,7 +46,7 @@ reviews = _reviews()
 
 visible = reviews[reviews["review_date"] <= as_of].sort_values("review_date", ascending=False)
 
-st.title("Customer Voice")
+st.title("Customer Sentiment Analysis")
 st.caption(f"Reviews and sentiment as of {as_of:%a, %b %d, %Y}.")
 
 # ---- Exception band -------------------------------------------------------
