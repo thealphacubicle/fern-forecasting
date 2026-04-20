@@ -106,7 +106,7 @@ data wish list. Date coverage: **January 2023 – December 2024**.
 - Identifies strong demand spikes driven by holidays and occasions
 - Quantifies inventory inefficiency
 
-Key finding: Fern wasted $41,394 over 2023–2024 (10.8% of revenue), hence the need for data-driven ordering.
+Key finding: Fern wasted $41,394 over 2023–2024 (6.9% of revenue), hence the need for data-driven ordering.
 
 ### 2. models/demand_forecasting.ipynb — Demand Forecasting Model
 
@@ -139,9 +139,13 @@ Results:
 - Applies a 5% safety buffer
 - Estimates cost savings
 
-Result:
+Result (initial simulation):
 - 32% reduction in waste costs
 - $851 projected annual savings
+
+Updated analysis (EDA refinement):
+- ~30–45% reduction under realistic forecast assumptions
+- ~$6K–$9K annual savings
 ---
 
 ## Model Performance
