@@ -69,7 +69,7 @@ fern-forecasting/
 │   │   ├── features.py                         # feature engineering
 │   │   └── preprocessing.py                    # data cleaning
 │   ├── notebooks/                              # ANALYSIS NOTEBOOKS 
-│   │   ├── 01_eda.ipynb                        # extra EDA (can be ignored)
+│   │   ├── 01_eda.ipynb                        # initial EDA, identifies waste problem
 │   │   ├── 02_sentiment_analysis.ipynb         # VADER scoring and LDA topic modeling
 │   │   └── 03_value_argument.ipynb             # Waste savings simulation
 │   └── scripts/
