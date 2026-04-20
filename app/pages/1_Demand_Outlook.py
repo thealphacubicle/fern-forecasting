@@ -1,4 +1,4 @@
-"""Demand Outlook — per-category history and 8-week forward forecast."""
+"""Demand Outlook: per-category history and 8-week forward forecast."""
 
 from __future__ import annotations
 
@@ -42,7 +42,7 @@ history = res["history"]
 forecast = res["forecast"]
 
 # ---- Header ---------------------------------------------------------------
-st.title(f"{category.title()} — Demand Outlook")
+st.title(f"{category.title()} Demand Outlook")
 st.caption(
     f"Weekly history through {as_of:%b %d, %Y} and forecast for the next "
     f"{len(forecast)} weeks."
@@ -85,7 +85,7 @@ if exceptions:
     for sev, msg in exceptions:
         (st.warning if sev == "warning" else st.info)(msg)
 else:
-    st.success("Nothing unusual in the outlook — steady trend.")
+    st.success("Nothing unusual in the outlook showing a steady trend.")
 
 # ---- Timeline chart -------------------------------------------------------
 window_start = as_of - pd.Timedelta(weeks=13)
@@ -95,7 +95,7 @@ fore_window = forecast[["week_start", "forecast"]].rename(columns={"forecast": "
 fore_window = fore_window.set_index("week_start")
 combined = pd.concat([hist_window, fore_window], axis=1).sort_index()
 
-st.subheader("Weekly demand — 13 weeks past + forecast ahead")
+st.subheader("Weekly demand: 13 weeks past + forecast ahead")
 st.line_chart(combined, height=360)
 
 # ---- Year-over-year sanity check -----------------------------------------
@@ -120,7 +120,7 @@ if not ya_rows.empty and not this_rows.empty:
     )
 
 # ---- Detail tables --------------------------------------------------------
-with st.expander("Forecast detail — next 8 weeks"):
+with st.expander("Forecast detail (next 8 weeks)"):
     out = forecast[["week_start", "forecast", "is_holiday_week", "min_days_to_holiday"]].copy()
     out["forecast"] = out["forecast"].round(1)
     out = out.rename(
@@ -139,8 +139,8 @@ with st.expander("Model diagnostics (for the analyst)"):
     d2.metric("Rolling 12-wk MAE", f"{res['holdout_mae']:.1f} units")
     d3.metric("Training weeks", f"{len(res['history'])}")
     st.caption(
-        "Scored on the 12 weeks immediately before the 'as of' date — a rolling "
-        "evaluation that tracks how the model does on fresh data."
+        "Scored on the 12 weeks immediately before the 'as of' date (a rolling "
+        "evaluation that tracks how the model does on fresh data)"
     )
     importances = pd.Series(
         res["model"].feature_importances_, index=FEATURE_COLS, name="importance"
